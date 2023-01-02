@@ -1,0 +1,1364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+}
+.header {
+  background-color: black;
+  width: 100%;
+  height: 44px;
+  color: white;
+  animation: lightSpeedInRight;
+  animation-duration: 2s;
+}
+.pName,
+.close-area {
+  display: inline-block;
+}
+.pName {
+  font-size: 15px;
+  margin-left: 600px;
+  padding-top: 10px;
+  animation: slideInDown;
+  animation-duration: 2s;
+}
+.close-area {
+  color: white;
+  font-size: 20px;
+  margin-left: 460px;
+  padding-top: 10px;
+}
+.section-options p {
+  font-size: 14px;
+}
+.section-options {
+  background-color: #242424;
+  display: flex;
+  height: 8vh;
+  width: 100%;
+}
+.left-section {
+  width: 50%;
+  padding-top: 17px;
+}
+.shield,
+#time {
+  display: inline-block;
+  padding-left: 5px;
+}
+.shield {
+  font-size: 21px;
+}
+.shieldOuter {
+  padding-left: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.right-section {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: centre;
+  vertical-align: middle;
+}
+.icons {
+  display: inline-block;
+  height: 7vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons p {
+  padding-top: 5px;
+  font-size: 11px;
+}
+.icons .ionicon {
+  justify-content: center;
+  align-items: center;
+}
+.vertical-line {
+  border-left: 1px solid #525252;
+  height: 45px;
+}
+.ionicon {
+  font-size: 30px;
+}
+.leave {
+  width: 100px;
+  height: 37px;
+  background-color: #c3304a;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 14px;
+}
+.ionicon-leave,
+.para-leave {
+  color: white;
+}
+.ionicon-leave {
+  transform: rotate(134deg);
+  font-size: 22px;
+}
+.circle-container {
+  background-color: #1f1f1f;
+}
+.circle-inner {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  align-items: flex-start;
+  height: 48vh;
+  animation: fadeInUp;
+  animation-duration: 1s;
+}
+.ahish1,
+.ahish2,
+.ahish3,
+.ahish4 {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: #dcf0f2;
+  position: relative;
+}
+.ahish1:hover {
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+.ahish2 {
+  background-color: #e8ced2;
+}
+.ahish3 {
+  background-color: #d2ebde;
+}
+.ahish4 {
+  background-color: #d2ebde;
+  outline: 4px solid rgb(17, 204, 218);
+  outline-offset: 3px;
+}
+.ahishbg .am,
+.sm,
+.tn,
+.bs {
+  font-size: 90px !important;
+  font-weight: 900;
+}
+.ahishbg .am,
+.sm {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+.am {
+  color: rgb(12, 151, 137);
+}
+.sm {
+  color: #51161c;
+}
+.tn {
+  color: #1d5b3f;
+}
+.bs {
+  color: #1d5b3f;
+}
+.ahishbg .tn,
+.bs {
+  position: absolute;
+  top: 40px;
+  left: 47px;
+}
+.ahishbg p {
+  color: white;
+  position: absolute;
+  top: 210px;
+  left: 80px;
+  font-size: 13px;
+}
+.bottom-photoDiv {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 150px;
+  margin-right: 30px;
+}
+.photoDiv-inner {
+  width: 300px;
+  height: 170px;
+  background-color: #3d3d3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen-sharing {
+  display: flex;
+  width: 30%;
+  justify-content: flex-end;
+}
+.people {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #dcf0f2;
+  align-items: flex-end;
+}
+.icons:hover {
+  color: rgba(174, 174, 255, 0.842);
+}
+.circle-pic {
+  width: 200px;
+  position: absolute;
+}
+.participants-container {
+  width: 30%;
+  /* height: 99.12vh; */
+  height: 100vh;
+  background-color: #1f1f1f;
+  float: right;
+  padding-left: 15px;
+  display: none;
+  border-left: 1px solid black;
+}
+.participants-text {
+  border-bottom: 1px solid black;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+}
+.sub-peopleIcon,
+.participants-close {
+  cursor: pointer;
+}
+.participants-h {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: -33px;
+}
+.participants-close {
+  color: white;
+  font-size: 30px;
+}
+.name-form {
+  padding: 20px 10px 0 35px;
+  position: relative;
+}
+::placeholder {
+  padding-left: 10px;
+  color: white;
+}
+.inputName {
+  width: 300px;
+  height: 40px;
+  border: none;
+  background: #292929;
+  outline: none;
+  color: white;
+  padding-left: 10px;
+}
+.chatFormInput {
+  width: 300px;
+  height: 40px;
+  border: none;
+  background: #292929;
+  outline: none;
+  color: white;
+  padding-left: 10px;
+}
+.box {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.box .inner {
+  height: 200px;
+  overflow-y: auto;
+}
+.inputName:focus {
+  border-bottom: 3px solid rgba(110, 110, 255, 0.842);
+}
+.search-icon {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 30px;
+  right: 78px;
+}
+.share-inviteBtn {
+  margin-top: 10px;
+  height: 35px;
+  width: 300px;
+  background-color: #292929;
+  border: 1px solid rgb(190, 185, 185);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.share-inviteBtn p {
+  text-align: center;
+  color: white;
+  padding-top: 2px;
+  padding-left: 5px;
+  font-size: 13px;
+}
+.share-icon {
+  color: white;
+  font-size: 20px;
+}
+.circle-meeting {
+  display: flex;
+  flex-direction: column;
+  height: 53vh;
+  position: relative;
+  padding-left: 35px;
+  padding-top: 4px;
+}
+.subMeeting {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #dcf0f2;
+  position: relative;
+}
+.sub-circle-pic {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+}
+.subMeeting .subIntials {
+  font-size: 11px !important;
+  position: absolute;
+  top: -7px;
+  left: 9px;
+}
+.sub-ionicon {
+  color: white;
+  font-size: 19px;
+  padding-left: 10px;
+}
+.firist {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.second-personList .subFirist::before {
+  position: absolute;
+  left: -50px;
+}
+.subFirist::before {
+  content: "";
+  background-color: #3d3d3d;
+  opacity: 0.2;
+  width: 400px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  display: none;
+}
+.subFirist:hover::before {
+  display: block;
+}
+.subFirist:hover .three-dot-menu {
+  display: block;
+}
+.firist p {
+  color: white;
+  padding-left: 20px;
+  font-size: 12px;
+  width: 219px;
+}
+.firist h5 {
+  color: white;
+  text-align: center;
+  margin-top: -13px;
+}
+.ahish4.subMeeting {
+  outline: 2px solid rgb(17, 204, 218);
+  outline-offset: 2px;
+}
+.icon-menu {
+  color: white;
+  margin-right: -10px;
+}
+.mutebtn {
+  padding-top: 7px;
+  width: 90px !important;
+  height: 34px;
+  border: 1px solid white;
+}
+.fourPersons {
+  width: 205px !important;
+}
+.circle-meeting .count1,
+.circle-meeting .count2 {
+  padding-bottom: 20px;
+  line-height: 49px;
+}
+.sub-peopleIcon.active {
+  border-bottom: 2px solid #9a9ef9;
+}
+.circle-container.active {
+  width: 70%;
+}
+.participants-container.active {
+  display: block;
+  position: absolute;
+  /* top: 94px; */
+  top: 93px;
+  right: 0;
+}
+.circle-meeting.active .personList {
+  display: none;
+}
+/* in this i have used different div */
+.circle-meeting.active2 .second-personList .subFirist {
+  display: none;
+}
+.circle-meeting.active .icon-menu {
+  transform: rotate(270deg);
+}
+/* height is auto adjusting */
+.circle-meeting.active {
+  padding-top: 20px;
+  height: 200px;
+}
+.second-icon-menu {
+  color: white;
+}
+.circle-meeting.active2 .second-icon-menu {
+  transform: rotate(270deg);
+}
+.chat-container {
+  width: 30%;
+  height: 100vh;
+  background-color: #1f1f1f;
+  float: right;
+  padding-left: 15px;
+  display: none;
+  border-left: 1px solid black;
+}
+.chat-text {
+  border-bottom: 1px solid black;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+}
+.sub-peopleIcon,
+.participants-close {
+  cursor: pointer;
+}
+.chat-h {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+}
+.chat-close {
+  color: white;
+  font-size: 30px;
+}
+.chat-outer-div {
+  /* display: flex;
+     align-items: flex-end;
+     height: 86vh;
+     */
+  width: 100px;
+  position: relative;
+  padding-left: 45px;
+}
+.chat-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 86vh;
+  animation: fadeInRight;
+  animation-duration: 1s;
+}
+/* for down chat msg */
+.innerMsg {
+  max-height: 500px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  /* overflow-y: auto;
+     */
+  /* for top chat msg */
+  /* position: absolute;
+     top: 0;
+     */
+}
+/* for dynamic chat */
+.message {
+  color: white;
+  margin-top: 5px;
+  padding: 14px;
+  font-size: 13px;
+  border-radius: 7px;
+  background-color: #2f2f4a;
+  position: relative;
+  max-width: 270px;
+  word-break: break-all;
+  /* border: 1px solid black;
+     */
+}
+.snd-icon {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: -30px;
+  left: 320px;
+}
+.container.active .chat-container {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 93px;
+}
+.container.active .circle-container {
+  width: 70%;
+}
+.container.active .sub-chatIcon {
+  border-bottom: 2px solid #9a9ef9;
+}
+.three-dot-menu {
+  color: white;
+  display: none;
+}
+.firist.subFirist {
+  position: relative;
+}
+.subAdd {
+  padding-top: 5px;
+}
+.edit {
+  width: 67px;
+  height: 28px;
+  position: absolute;
+  top: 26px;
+  left: 204px;
+  background-color: #3d3d3d;
+  display: none;
+  border-radius: 7px;
+  z-index: 1;
+  padding-top: 3px;
+}
+.edit.active {
+  display: block;
+}
+.circleDivOuter1.active {
+  display: none;
+}
+.circleDivOuter2.active {
+  display: none;
+}
+.circleDivOuter3.active {
+  display: none;
+}
+.circleDivOuter4.active {
+  display: none;
+}
+.circle-inner .ahish4.ahishbg.active {
+  display: none;
+}
+.personList1.active1,
+.personList2.active1,
+.personList3.active1,
+.personList4.active1 {
+  display: none;
+}
+.static-chat {
+  /* background-color: #2f2f4a;
+     */
+  background-color: #3d3d3d;
+  width: 155px;
+  height: 73px;
+  border-radius: 6px;
+  margin-left: -4px;
+  position: relative;
+}
+.static-chat .subMeeting {
+  position: absolute;
+  top: 6px;
+  left: -25px;
+}
+.static-chat .subIntials {
+  position: absolute;
+  top: 7px;
+}
+.staticName {
+  color: white;
+  font-size: 13px;
+  position: relative;
+}
+.chatIcon .subIntials {
+  position: absolute;
+  top: 7px;
+}
+.insideStaticChat {
+  padding: 10px 0 0 20px;
+}
+.staticMessage {
+  color: white;
+  font-size: 12px;
+}
+.staticDate {
+  font-size: 12px;
+  color: #adadad;
+}
+.inCall {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  top: 27px;
+  left: 0;
+  outline: 1px solid rgb(39, 39, 39);
+}
+.second-personList {
+  display: none;
+}
+.circleDivOuter1.active .second-personList {
+  display: block;
+}
+.subReactions {
+  position: relative;
+}
+/* .subReactions::after{
+     content: "";
+     width: 210px;
+     height: 40px;
+     background-color: rgb(52 51 51 / 63%);
+     position: absolute;
+     top: 0;
+     left: -80px;
+     border-radius: 7px;
+     display: none;
+}
+ */
+.reactions-hover {
+  width: 210px;
+  height: 40px;
+  background-color: #3d3d3d;
+  position: absolute;
+  top: 0;
+  left: -80px;
+  border-radius: 7px;
+  /* filter: brightness(50%);
+     */
+  display: none;
+}
+.outerDiv-icons-reaction:hover .reactions-hover {
+  display: block;
+}
+/* .subReactions:hover::after{
+     display: block;
+}
+ */
+/* .sub-reactions-icon1:hover{
+     transform: scale(1.4) ;
+     z-index: 10 !important;
+     position: absolute;
+     top: 0;
+     left: 0;
+}
+ */
+.reactions-icon {
+  color: yellow;
+  margin: 9px;
+  font-size: 17px;
+}
+.sub-reactions-icon3 {
+  color: red;
+}
+/* .sub-reaction-icon1:hover .reactions-hover::after{
+     display: block;
+}
+ */
+/* for dynamic chat */
+.chatIcon .subMeeting {
+  position: absolute;
+  top: 8px;
+  left: -22px;
+}
+.message:hover .msgMenu-icon {
+  display: block;
+}
+.msgMenu-icon {
+  color: white;
+  position: absolute;
+  top: 3px;
+  right: 7px;
+  display: none;
+}
+.outer-msg-delete-edit {
+  width: 63px;
+  line-height: 19px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #3d3d3d;
+  position: absolute;
+  top: -47px;
+  left: -9px;
+  display: none;
+}
+.outer-msg-delete-edit.active {
+  display: block;
+}
+.outer-msg-delete-edit .message {
+  display: none;
+}
+.outer-msg-delete-edit .active {
+  display: block;
+}
+.msgDelete-p,
+.msgEdit-p {
+  font-size: 11px;
+  color: white;
+}
+.outer-bg.active {
+  display: block;
+}
+.outer-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: transparent;
+  display: none;
+}
+.clear {
+  clear: both;
+}
+@media only screen and (max-width: 1024px) {
+  .close-area {
+    margin-left: 322px;
+  }
+  .right-section {
+    width: 65% !important;
+  }
+  .left-section {
+    width: 32%;
+    padding-top: 31px;
+  }
+  .icons {
+    height: unset;
+  }
+  .pName {
+    margin-left: 442px;
+  }
+  .section-options {
+    height: 6vh;
+  }
+  .circle-container {
+    width: 100%;
+  }
+  .circle-inner {
+    display: flex;
+    justify-content: space-evenly;
+    height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .ahish1,
+  .ahish2,
+  .ahish3,
+  .ahish4 {
+    width: 192px;
+    height: 192px;
+  }
+  .circle-pic {
+    width: 193px;
+    position: absolute;
+  }
+  .ahishbg p {
+    position: absolute;
+    top: 201px;
+    left: 69px;
+  }
+  .circlelist {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    background-color: #3d3d3d;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .ahishbg p {
+    color: white;
+    font-size: 15px;
+  }
+  .ahishbg .am,
+  .sm {
+    position: absolute;
+    top: 50px;
+    left: 45px;
+  }
+  .ahishbg .tn,
+  .bs {
+    position: absolute;
+    top: 57px;
+    left: 53px;
+  }
+  .photoDiv-inner {
+    width: 343px;
+    height: 195px;
+  }
+  .container {
+    height: 100vh;
+    background: #1f1f1f;
+  }
+  .bottom-photoDiv {
+    margin-top: 54px;
+    margin-right: 107px;
+  }
+  .circle-container.active {
+    width: 62%;
+  }
+  .circle-container.active .circlelist {
+    width: 285px;
+    height: 285px;
+  }
+  .circle-container.active .circle-pic {
+    width: 178px;
+  }
+  .circle-container.active .ahish1,
+  .ahish2,
+  .ahish3,
+  .ahish4 {
+    width: 178px;
+    height: 178px;
+  }
+  .circle-container.active .ahishbg .am,
+  .sm,
+  .tn,
+  .bs {
+    font-size: 59px !important;
+    font-weight: 900;
+  }
+  .participants-container.active .ahishbg .tn {
+    position: absolute;
+    top: -6px;
+    left: 11px;
+  }
+  .participants-container {
+    width: 35%;
+    height: 89.12vh;
+    background-color: #1f1f1f;
+  }
+  .participants-container.active {
+    position: absolute;
+    top: 128px;
+    right: 21px;
+  }
+  .participants-container.active .subMeeting {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #dcf0f2;
+    position: relative;
+  }
+  .participants-text {
+    height: 62px;
+    padding: 0 8px 0 64px;
+  }
+  .share-inviteBtn {
+    margin-top: 26px;
+  }
+  .circle-meeting {
+    height: 38vh;
+  }
+  .container.active .circlelist {
+    width: 285px;
+    height: 285px;
+  }
+  .container.active .circle-pic {
+    width: 178px;
+  }
+  .container.active .ahish1,
+  .ahish2,
+  .ahish3,
+  .ahish4 {
+    width: 178px;
+    height: 178px;
+  }
+  .container.active .ahishbg .am,
+  .sm,
+  .tn,
+  .bs {
+    font-size: 59px !important;
+  }
+  .chat-container {
+    width: 31%;
+    height: 89.42vh;
+  }
+  .container.active .chat-container {
+    position: absolute;
+    right: 9px;
+    top: 135px;
+  }
+  .static-chat .subMeeting {
+    width: 30px;
+    height: 30px;
+  }
+  .chatFormInput {
+    width: 226px;
+  }
+  .chat-text {
+    padding: unset;
+  }
+  .innerMsg {
+    width: 222px;
+  }
+  .snd-icon {
+    left: 248px;
+  }
+  .other-participants {
+    margin-left: -50px;
+  }
+  .edit {
+    top: 33px;
+    left: 195px;
+  }
+  .firist h5 {
+    margin-top: -17px;
+  }
+  .message .subMeeting {
+    width: 33px !important;
+    height: 33px !important;
+  }
+  .message .subMeeting .am {
+    font-size: 16px !important;
+  }
+  .ahishbg .am {
+    position: absolute;
+    top: 40px;
+    left: 15px !important;
+  }
+  .container.active .bottom-photoDiv {
+    margin-top: 54px;
+    margin-right: 164px;
+  }
+  .inCall {
+    top: 22px;
+    left: -1px;
+  }
+  .chatIcon .subMeeting {
+    position: absolute;
+    top: 8px;
+    left: -22px;
+    display: none;
+  }
+  .search-icon {
+    right: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .close-area {
+    margin-left: 191px;
+  }
+  .pName {
+    margin-left: 321px;
+  }
+  .left-section {
+    width: 32%;
+    padding-top: 23px;
+  }
+  .right-section {
+    width: 79% !important;
+  }
+  .circlelist {
+    width: 334px;
+    height: 289px;
+  }
+  .circle-pic {
+    width: 164px;
+  }
+  .circlelist {
+    width: 257px;
+    height: 257px;
+  }
+  .ahishbg p {
+    position: absolute;
+    top: 175px;
+    left: 57px;
+  }
+  .ahish1,
+  .ahish2,
+  .ahish3,
+  .ahish4 {
+    width: 164px;
+    height: 164px;
+  }
+  .ahishbg .am,
+  .sm,
+  .tn,
+  .bs {
+    font-size: 50px;
+    font-weight: 900;
+  }
+  .bottom-photoDiv {
+    margin-top: 13px;
+    margin-right: 81px;
+  }
+  .photoDiv-inner {
+    width: 247px;
+    height: 155px;
+  }
+  .ahishbg .am,
+  .sm {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+  }
+  .circle-container.active .circlelist {
+    width: 165px;
+    height: 165px;
+  }
+  .inputName,
+  .share-inviteBtn {
+    width: 94%;
+  }
+  .participants-container {
+    height: 100%;
+    width: 100%;
+    background-color: #1f1f1f;
+    float: right;
+    padding-left: 15px;
+    border-left: unset;
+  }
+  .participants-container.active {
+    right: 129px;
+    top: 105px;
+    left: 0;
+  }
+  .participants-container.active .subMeeting {
+    width: 33px !important;
+    height: 33px !important;
+    border-radius: 50%;
+    background-color: #dcf0f2;
+    position: relative;
+  }
+  .circle-meeting .personList {
+    width: 100%;
+  }
+  .container.active .circlelist {
+    width: 187px;
+    height: 240px;
+  }
+  .container.active .chat-container {
+    left: 0;
+  }
+  .chat-container {
+    width: 100%;
+    height: 89.42vh;
+  }
+  .chat-inner-container {
+    height: 77vh;
+  }
+  .chat-text {
+    padding: 10px 20px 31px 10px;
+  }
+  .container.active .ahishbg .am,
+  .sm,
+  .tn,
+  .bs {
+    display: none;
+  }
+  .container .ahishbg .am,
+  .sm,
+  .tn,
+  .bs {
+    display: block;
+  }
+  .chatFormInput {
+    width: 667px;
+  }
+  .snd-icon {
+    left: 691px;
+  }
+  .innerMsg {
+    width: 620px;
+  }
+  .ahishbg .tn,
+  .bs {
+    position: absolute;
+    top: 42px;
+    left: 45px;
+  }
+  .search-icon {
+    right: 61px;
+  }
+  .participants-text {
+    padding: 0 57px 0 63px;
+  }
+  .mutebtn {
+    position: absolute;
+    left: 571px;
+  }
+  .circle-inner {
+    align-items: flex-start;
+  }
+  .other-participants {
+    margin-left: unset;
+  }
+  .sub-ionicon {
+    color: white;
+    font-size: 19px;
+    padding-left: 10px;
+    position: absolute;
+    left: 626px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .circle-container.active .circle-pic {
+    width: 15px;
+  }
+  .circle-container.active .ahish1,
+  .ahish2,
+  .ahish3,
+  .ahish4 {
+    width: 46px;
+    height: 53px;
+  }
+  .container.active .circle-pic {
+    width: 15px;
+  }
+  .container.active .ahish1,
+  .ahish2,
+  .ahish3,
+  .ahish4 {
+    width: 46px;
+    height: 53px;
+  }
+  .pName {
+    margin-left: 102px;
+  }
+  .close-area {
+    display: none;
+  }
+  .right-section {
+    width: 98% !important;
+    position: absolute;
+    top: 578px;
+    left: 3px;
+    padding-left: 20px;
+  }
+  .section-options {
+    position: relative;
+  }
+  .icons.sub-chatIcon {
+    position: absolute;
+    top: -569px;
+    right: 14px;
+  }
+  .icons.sub-peopleIcon {
+    position: absolute;
+    top: -569px;
+    right: 45px;
+  }
+  .left-section {
+    width: 75%;
+    padding-top: 10px;
+    position: relative;
+    padding-left: 1px;
+  }
+  .ionicon {
+    font-size: 19px;
+  }
+  .icons p {
+    display: none;
+  }
+  .circlelist {
+    width: 169px;
+    height: 169px;
+  }
+  .ahishbg .am,
+  .sm,
+  .tn,
+  .bs {
+    font-size: 33px !important;
+  }
+  .ahish1,
+  .ahish2,
+  .ahish3,
+  .ahish4 {
+    width: 104px;
+    height: 104px;
+  }
+  .circle-pic {
+    width: 104px;
+  }
+  .ahishbg .am,
+  .sm {
+    position: absolute;
+    top: 29px;
+    left: 30px;
+  }
+  .ahishbg .tn,
+  .bs {
+    position: absolute;
+    top: 28px;
+    left: 31px;
+  }
+  .ahishbg p {
+    position: absolute;
+    top: 112px;
+    left: 32px;
+  }
+  .photoDiv-inner {
+    width: 123px;
+    height: 92px;
+  }
+  .bottom-photoDiv {
+    margin-right: 12px;
+  }
+  .participants-container.active .circle-inner {
+    margin-top: -27px;
+  }
+  .vertical-line {
+    border-left: 1px solid #525252;
+    height: 34px;
+  }
+  .leave {
+    width: 71px;
+    height: 33px;
+  }
+  .circle-container.active .circlelist {
+    width: 103px;
+    height: 98px;
+  }
+  .participants-container {
+    height: 86%;
+  }
+  .circle-meeting {
+    height: unset;
+  }
+  .participants-container.active .circle-inner {
+    margin-top: unset;
+  }
+  .container.active .circlelist {
+    width: 103px;
+    height: 98px;
+  }
+  .chatFormInput {
+    width: 260px;
+  }
+  .innerMsg {
+    width: 293px;
+    max-height: 283px;
+    overflow-y: auto;
+  }
+  .snd-icon {
+    left: 307px;
+  }
+  .chat-inner-container {
+    height: 79vh;
+  }
+  .sub-peopleIcon.active {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #9a9ef9;
+  }
+  .container.active .sub-chatIcon {
+    border-bottom: 2px solid #9a9ef9;
+    padding-bottom: 10px;
+  }
+  .ahishbg .am,
+  .sm {
+    position: absolute;
+    top: 31px;
+    left: 29px;
+  }
+  .mutebtn {
+    padding-top: 7px;
+    width: 83px !important;
+    position: absolute;
+    left: 238px;
+  }
+  .participants-container.active {
+    top: 85px;
+  }
+  .participants-text {
+    height: 38px;
+  }
+  .circle-inner {
+    height: 59vh;
+    padding-top: 10px;
+    /* align-items: center;
+         */
+  }
+  .container.active .chat-container {
+    top: 87px;
+  }
+  .chat-text {
+    padding: 0 15px 0 6px;
+  }
+  .chatFormInput {
+    width: 290px;
+  }
+  .share-inviteBtn {
+    margin-top: 11px;
+  }
+  .participants-text {
+    padding: unset;
+    padding-left: 50px;
+  }
+  .participants-close {
+    padding-right: 25px;
+  }
+  .search-icon {
+    right: 32px;
+    top: 22px;
+  }
+  .circle-meeting {
+    padding-left: 11px;
+  }
+  .name-form {
+    padding: 10px 10px 0 13px;
+  }
+  .inputName,
+  .share-inviteBtn {
+    width: 95%;
+  }
+  .reactions-hover {
+    top: -62px;
+    left: -8px;
+  }
+  .shieldOuter {
+    padding-left: 8px;
+  }
+  .section-options p {
+    display: none;
+  }
+  .other-participants {
+    margin-top: -16px;
+  }
+  .sub-ionicon {
+    position: unset;
+  }
+  .firist p {
+    width: 233px;
+  }
+  .chat-outer-div {
+    padding-left: 35px;
+  }
+}
